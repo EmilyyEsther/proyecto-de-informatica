@@ -1,0 +1,55 @@
+
+
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
+    background: #ffffff;
+  }
+  
+  #navbarSupportedContent{
+    padding-top: 15px;
+    font-size: 25px;
+
+  }
+
+  .button-checkout {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Ajusta el padding para controlar el tamaño del botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.button-checkout:hover {
+    background-color: rgb(189, 252, 176); /* Cambio de color en el hover */
+    color: white;
+}
+
+/* Estilos personalizados */
+.button-checkout {
+  background-color: #4CAF50; /* Verde */
+  border: none;
+  color: white;
+  padding: 8px 15px; /* Ajusta el padding para controlar el tamaño del botón */
+  font-size: 14px; /* Tamaño de la fuente */
+  border-radius: 3px; /* Borde redondeado */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.button-checkout:hover {
+  background-color: rgb(189, 252, 176); /* Cambio de color en el hover */
+}
+
+/* Otros estilos */
+/* ... */
+
+

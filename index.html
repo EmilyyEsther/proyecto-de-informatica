@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EmilyB&C</title>
+    <link rel="shortcut icon" href="./img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head> 
+<body>
+  
+  
+   <div class="page-nav"></div>
+   <img src="./img/logo2.png" alt="" srcset="" height="80px">
+   </div>
+
+   <div>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-4 mb-lg-3">
+          <li class="nav-item">
+            <h1 class="nav-link active" aria-current="page" href="#"  >Home
+            </h1>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="height: 50px;" href="./img/pipipi.jpg">link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Más
+            </a>
+            
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" >bolsas</a></li>
+              <li><a class="dropdown-item" href="#">belleza</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">ropa</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-6" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+          <button id="pagar" class="button-checkout" onclick="emily()">Pagar</button>
+        </form>
+      
+      </div>
+      </div>
+    </div>
+  </nav>
+
+   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/cartera ori.jpg" class="d-block w-100" alt="..." height="600px">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/cartera4.webp" class="d-block w-100" alt="..." height="600px">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/cartera2.jpg" class="d-block w-100" alt="..." height="600px">
+      </div>
+
+  
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+ 
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/yeye.jpeg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Corrector</h5>
+          <p class="card-text">Es la prebase ideal para la sombra de ojos y los labiales. Crea una base uniforme para una aplicación suave e incluso ayuda a que tus productos duren más. Solo aplica una pequeña cantidad en los párpados y/o labios y difumínalo suavemente con los dedos.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+          
+              <h1>$20</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-1', 20)">agregar al carrito</button>
+
+              
+            </div>
+            
+
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/yyy.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Iluminador</h5>
+          <p class="card-text">El iluminador sirve para resaltar las facciones de tu rostro. Además, le da luz a tu mirada, dándole un toque de vitalidad increíble.  </p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+              <h1>$15</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-2', 15)">agregar al carrito</button>
+
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/blytr.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Brillo rosa</h5>
+          <p class="card-text">El brillo labial es la opción perfecta para dar un toque de volumen y aspecto jugoso a nuestros labios, además generalmente aportan un aspecto más fresco y natural ya que usualmente se llevan en tonos suaves.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+              <h1>$20</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-3', 20)">agregar al carrito</button>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/masakeador capilar.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">masajeador capilar</h5>
+          <p class="card-text">El masaje capilar, en definitiva, no solo se aplica para relajar tensiones, sino también para ayudar a retrasar y evitar la caída del cabello. Las propiedades de un buen masaje de este tipo fortalecerán el cuero cabelludo para que el pelo luzca más brillante, saludable y resistente.</p>
+        </div>
+        <div class="card-footer">
+           <div class="product-container">
+            <h1>$10</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-4', 10)">agregar al carrito</button>
+
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/belleza2.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Base</h5>
+          <p class="card-text">La base de maquillaje es un producto que ayuda a que la piel luzca un mejor aspecto, de igual manera puede ayudar a disminuir la apariencia de algunas imperfecciones. </p>
+        </div>
+        <div class="card-footer">
+          <div class="product-container">
+            <h1>$20</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-5', 20)">agregar al carrito</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/djnrgd.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Brillo rojo coral</h5>
+          <p class="card-text">El brillo labial es la opción perfecta para dar un toque de volumen y aspecto jugoso a nuestros labios, además generalmente aportan un aspecto más fresco y natural ya que usualmente se llevan en tonos suaves.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+              <h1>$20</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-6', 20)">agregar al carrito</button>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/3333.4.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Polvo sellador</h5>
+          <p class="card-text">El polvo compacto lo puedes aplicar directamente sobre el rostro limpio y humectado o para sellar el maquillaje que previamente has realizado. En cualquier caso, tu piel lucirá matificada y uniforme.
+          </p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+            <h1>$15</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-7', 15)">agregar al carrito</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/belleza9.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Paleta de colores</h5>
+          <p class="card-text">Las paletas de sombras son un producto esencial en el maquillaje, ya que permiten iluminar y aportar profundidad a la mirada. Son perfectas tanto para crear looks diarios y básicos, como para conseguir una estética llamativa en ocasiones especiales.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+              <h1>$40</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-8', 40)">agregar al carrito</button>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/labial111.jpg" class="card-img-top" alt="..." height="350">
+        <div class="card-body">
+          <h5 class="card-title">Brillo rosa pastel</h5>
+          <p class="card-text">El brillo labial es la opción perfecta para dar un toque de volumen y aspecto jugoso a nuestros labios, además generalmente aportan un aspecto más fresco y natural ya que usualmente se llevan en tonos suaves.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+                <h1>$10</h1>
+                <button class="btn btn-secondary btn-sm" onclick="add('producto-9', 10)">agregar al carrito</button>
+
+               </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-secondary">1</button>
+          <button type="button" class="btn btn-secondary">2</button>
+          <button type="button" class="btn btn-secondary">3</button>
+          <button type="button" class="btn btn-secondary">más</button>
+        </div>
+
+        </div>
+      </div>
+  </div>
+ 
+  <script src="java.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
